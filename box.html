@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            position: relative;
+            height: 600px;
+            width: 400px;
+            border: 2px solid black;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            transform-origin: left;
+
+
+
+        }
+
+        .door1 {
+            position: absolute;
+            height: 100%;
+            width: 200px;
+            background-color: rgb(255, 206, 133);
+            transform-origin: left;
+            transition: 2s;
+        }
+
+        .door2 {
+            position: absolute;
+            height: 100%;
+            width: 200px;
+            margin-left: 200px;
+            background-color: rgba(240, 4, 200, 0.384);
+            transform-origin: right;
+            transition: 2s;
+        }
+
+        .circel1 {
+            position: absolute;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            left: 140px;
+            top: 260px;
+            background-color: rgba(255, 255, 255);
+        }
+
+        .circel2 {
+            position: absolute;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            RIGHT: 140px;
+            top: 260px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .door1:hover {
+            transform: perspective(1200px) rotateY(-60deg);
+
+        }
+
+        .door2:hover {
+            transform: perspective(1200px) rotateY(60deg);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box1">
+        <div class="door1">
+            <div class="circel1">
+
+            </div>
+
+
+        </div>
+
+        <div class="door2">
+            <div class="circel2">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
